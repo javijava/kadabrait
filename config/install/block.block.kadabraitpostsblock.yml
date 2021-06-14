@@ -1,0 +1,33 @@
+uuid: b61efb8d-4283-472a-b705-9db061679628
+langcode: es
+status: true
+dependencies:
+  module:
+    - kadabrait_content
+    - system
+    - user
+  theme:
+    - bartik
+id: kadabraitpostsblock
+theme: bartik
+region: sidebar_first
+weight: 0
+provider: null
+plugin: kadabrait_content_example
+settings:
+  id: kadabrait_content_example
+  label: 'Kadabrait Posts Block'
+  provider: kadabrait_content
+  label_display: visible
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+  user_role:
+    id: user_role
+    roles:
+      authenticated: authenticated
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
