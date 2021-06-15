@@ -6,7 +6,7 @@
  */
 
 /**
- * {@inheritdoc}
+ * Implements hook_theme().
  */
 function kadabrait_content_theme($existing, $type, $theme, $path) {
   return [
