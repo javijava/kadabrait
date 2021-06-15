@@ -1,11 +1,3 @@
-kadabrait_content.example:
-  path: '/kadabrait-content/example'
-  defaults:
-    _title: 'Example'
-    _controller: '\Drupal\kadabrait_content\Controller\KadabraitContentController::build'
-  requirements:
-    _permission: 'access content'
-
 kadabrait_content.todos:
   path: '/kadabrait-content/todos'
   defaults:
