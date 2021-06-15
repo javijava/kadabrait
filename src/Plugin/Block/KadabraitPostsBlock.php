@@ -34,7 +34,7 @@ class KadabraitPostsBlock extends BlockBase implements ContainerFactoryPluginInt
   }
 
   /**
-   * {@inheritdoc}
+   * Function Create.
    */
   public static function create(ContainerInterface $container, array $configuration, $plugin_id, $plugin_definition) {
     return new static(
@@ -46,7 +46,7 @@ class KadabraitPostsBlock extends BlockBase implements ContainerFactoryPluginInt
   }
 
   /**
-   * {@inheritdoc}
+   * Function build.
    */
   public function build() {
     $output = $this->postservice->getLastPosts(3);

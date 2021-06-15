@@ -32,7 +32,6 @@ class KadabraitContentController extends ControllerBase {
    */
   public static function create(ContainerInterface $container) {
     return new static(
-    // $container->get('current_user'),
       $container->get('kadabrait_content.post')
     );
   }
